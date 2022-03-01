@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You're in the Jungle, Baby</title>
+    <title>It's Playbox, Baby</title>
     <style> 
         * {
             padding: 0; 
@@ -30,11 +30,12 @@
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            /* border: red solid 1px;  */
-            margin-bottom: 20px; 
+            border: red solid 1px; 
+            margin-bottom: 20px;
+            
         }
-        .box {
-            /* background-color: aqua;  */
+        #box {
+            background-color: aqua;
             border: black solid 3px;
             width:300px;
             height: 300px;
@@ -47,13 +48,32 @@
     <div id=header> 
     <h1> Welcome to the Playground!</h1>
     </div>
+<!--     
+    <div id="container"> 
+    
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+    </div>  
+-->
 
     <div id="container"> 
-        {% for i in range(0, displayThisMany): %}
-            <div class="box" style="background-color: {{displayThisColorYknow}};"></div>
+        {% for i in range(0,num): %}
+            <div id="box"></div>
         {% endfor %}    
     </div>
+<!-- 
+    <div>
+    <p>Here is the phrase, people:  {{phrase}} </p>
 
+    <p>here is the integer, folks: {{times}}     </p>
+    
+    {% for i in range(0, times): %}
+    <p>{{phrase}}</p>
+    {% endfor %}
+    </div> 
+-->
 </body>
 </html>
 
