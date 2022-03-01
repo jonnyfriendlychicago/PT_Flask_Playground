@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're in the Jungle, Baby</title>
+    <style> 
+    #header {
+        background-color: blueviolet;
+        width: 100%;
+        height: 40px; 
+    }
+    </style>
+</head>
+<body>
+    <div id=header> 
+    <h1> Welcome to the Playground!</h1>
+    </div>
+    <p>Here is the phrase, people:  {{phrase}} </p>
+
+    <p>here is the integer, folks: {{times}}     </p>
+    
+    {% for i in range(0, times): %}
+    <p>{{phrase}}</p>
+    {% endfor %}
+
+</body>
+</html>
+
